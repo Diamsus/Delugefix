@@ -1,0 +1,25 @@
+#!/usr/bin/python
+
+#A quick fix for the python cannot aquire lock error
+#Written by Timothy Mientjes for free distribution
+
+import os
+import sh
+
+myfile='/home/matham/.config/deluge/ipc/deluge-gtk.lock'
+
+if os.path.isfile(myfile):
+     os.remove(myfile)
+
+else:
+    print("Error: %s file not found" % myfile)
+
+myfile2="/home/matham/.config/deluge/ipc/deluge-gtk"
+
+if os.path.isfile(myfile2):
+     os.remove(myfile2)
+
+else:
+    print("Error: %s file not found" % myfile2)
+
+sh.deluge()
