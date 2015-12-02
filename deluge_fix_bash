@@ -2,11 +2,11 @@
 
 #A simple script to fix Deluge
 
-rm /home/matham/.config/deluge/ipc/deluge-gtk*
+rm ~/.config/deluge/ipc/deluge-gtk*
 
 deluge
 
-rm /home/matham/.config/deluge/ipc/deluge-gtk*
+rm ~/.config/deluge/ipc/deluge-gtk*
 
 deluge
 
